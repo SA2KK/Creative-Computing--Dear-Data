@@ -1,0 +1,26 @@
+year,chip,transistor_count,source_url
+1971,Intel 4004,2300,https://www.intel.com/pressroom/kits/quickreffam.htm
+1972,Intel 8008,3500,https://www.intel.com/pressroom/kits/quickreffam.htm
+1974,Intel 8080,6000,https://www.intel.com/pressroom/kits/quickreffam.htm
+1976,Intel 8085,6500,https://www.intel.com/pressroom/kits/quickreffam.htm
+1978,Intel 8086,29000,https://www.intel.com/pressroom/kits/quickreffam.htm
+1979,Intel 8088,29000,https://www.intel.com/pressroom/kits/quickreffam.htm
+1982,Intel 80286,134000,https://www.intel.com/pressroom/kits/quickreffam.htm
+1985,Intel 386 DX,275000,https://www.intel.com/pressroom/kits/quickreffam.htm
+1988,Intel 386 SX,275000,https://www.intel.com/pressroom/kits/quickreffam.htm
+1989,Intel 486 DX,1200000,https://www.intel.com/pressroom/kits/quickreffam.htm
+1992,Intel 486 SL,1400000,https://www.intel.com/pressroom/kits/quickreffam.htm
+1993,Intel Pentium,3100000,https://www.intel.com/pressroom/kits/quickreffam.htm
+1994,Intel DX4,1600000,https://www.intel.com/pressroom/kits/quickreffam.htm
+1995,Intel Pentium Pro,5500000,https://www.intel.com/pressroom/kits/quickreffam.htm
+1997,Intel Pentium II,7500000,https://www.intel.com/pressroom/kits/quickreffam.htm
+1999,Intel Pentium III,9500000,https://www.intel.com/pressroom/kits/quickreffam.htm
+2000,Intel Pentium 4,42000000,https://www.intel.com/pressroom/kits/quickreffam.htm
+2005,Intel Pentium 4 600,169000000,https://www.intel.com/pressroom/kits/quickreffam.htm
+2006,Intel Core 2 Duo,291000000,https://www.intel.com/pressroom/kits/quickreffam.htm
+2007,Intel Core 2 Quad,582000000,https://www.intel.com/pressroom/kits/quickreffam.htm
+2008,Intel Core i7,731000000,https://www.intel.com/pressroom/kits/quickreffam.htm
+2020,Apple M1,16000000000,https://www.apple.com/newsroom/2020/11/apple-unleashes-m1/
+2022,Apple M2,20000000000,https://www.apple.com/newsroom/2022/06/apple-unveils-m2-with-breakthrough-performance-and-capabilities/
+2023,Apple M3,25000000000,https://www.apple.com/ie/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/
+2024,Apple M4,28000000000,https://www.apple.com/newsroom/2024/05/apple-introduces-m4-chip/
