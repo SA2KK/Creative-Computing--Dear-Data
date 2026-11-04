@@ -1,9 +1,6 @@
 // SILICON BLOOM — VERSION 1
 // This sketch shows the history of processors as a small flower garden.
 // Each flower represents one chip. Larger flowers mean more transistors.
-// The records below come from these online sources:
-// Intel: https://www.intel.com/pressroom/kits/quickreffam.htm
-// Apple: Newsroom announcements for M1, M2, M3 and M4 (2020–2024).
 
 // The year at each position in this list belongs to the chip at that
 // same position in the chips and transistors lists below.
@@ -41,19 +38,16 @@ String[] countLabels = {
   "20 billion", "25 billion", "28 billion"
 };
 
-// One colour for each era: 1970s, 1980s, 1990s, 2000s and 2020s.
+// Each Era has one colour: 1970s, 1980s, 1990s, 2000s and 2020s.
 color[] colours = {
   #FFB35C, #FF7E6F, #EFD270, #84CFA4, #73C1EB
 };
 
-// setup() runs once when the sketch starts.
 void setup() {
   // Set the drawing window's width and height in pixels.
   size(1080, 760);
 }
 
-// draw() repeats many times per second, so the screen stays updated
-// as the mouse moves over the flowers.
 void draw() {
   // Paint over the previous frame with a dark background.
   background(#12192B);
@@ -73,15 +67,15 @@ void draw() {
   // Go through the data once and draw one flower for each chip.
   for (int i = 0; i < years.length; i++) {
     // Put each flower in a five by five arrangement.
-    // Every second row shifts sideways to make the garden feel less rigid.
+    // Every second row shifts sideways to make the garden feel less rigid. To give it a bit of creative flair instead of remaing in static posiitons.
     int column = i % 5;
     int row = i / 5;
     float x = 145 + column * 195 + (row % 2) * 42;
     float y = 185 + row * 105;
-    // Look up the flower size using this chip's transistor count.
+    // Initialised and declared a new variable of type float that stores value based on the current position of the array list which links with the method flowerSize();
     float size = flowerSize(transistorCount[i]);
 
-    // Pick a colour index based on the chip's decade.
+    // Pick a colour position based on the chip's decade.
     int era = 0;
     if (years[i] >= 1980) era = 1;
     if (years[i] >= 1990) era = 2;
@@ -95,7 +89,7 @@ void draw() {
     fill(ink, 25);
     ellipse(x, y, size * 2.3, size * 2.3);
 
-    // Draw four petals with simple left, right, up and down offsets.
+    // Draw four petals with simple left, right, up and down offset relative to the coordinates of the central ellipse.
     fill(ink, 120);
     ellipse(x - size * 0.36, y, size * 0.48, size * 0.48);
     ellipse(x + size * 0.36, y, size * 0.48, size * 0.48);
@@ -128,8 +122,7 @@ void draw() {
 
   fill(#F5F0E0);
   textSize(14);
-  // Show chip details when the mouse is over a flower. Otherwise,
-  // show a simple instruction.
+  // This show's chip details when the mouse is over a flower. If the condition reslves to FALSE, then the text in line 130 is displayed.
   if (selected.length() > 0) {
     text(selected, 42, height - 82);
   } else {
@@ -138,8 +131,7 @@ void draw() {
   }
 }
 
-// This method turns a transistor count into one of a few flower sizes.
-// Using ranges keeps the sizes readable even though the counts vary a lot.
+// This method turns a links the transistor count to the subsequent flower size.
 float flowerSize(float count) {
   // Check the ranges in order. The first matching branch returns its size.
   if (count < 10000) {
